@@ -1,40 +1,101 @@
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
-    --green-clr: hsl(75, 94%, 57%);
-    --white-clr: hsl(0, 0%, 100%);
-    --grey-clr: hsl(0, 0%, 20%);
+  --green-clr: hsl(75, 94%, 57%);
+  --white-clr: hsl(0, 0%, 100%);
+  --grey-clr: hsl(0, 0%, 20%);
 
-    --dark-grey-clr: hsl(0, 0%, 12%);
-    --off-black-clr: hsl(0, 0%, 8%);
+  --dark-grey-clr: hsl(0, 0%, 12%);
+  --off-black-clr: hsl(0, 0%, 8%);
 }
 
-html, body {
-    height: 100%;
-}
-
+html,
 body {
-    display: grid;
-    place-items: center;
+  height: 100%;
+}
+body {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--off-black-clr);
 }
 
 .social-links-card {
-    background-color: var(--grey-clr);
-    color: var(--white-clr);
+  background-color: var(--dark-grey-clr);
+  color: var(--white-clr);
 }
 
 .social-links-card {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  padding: 1.25em 1em;
+  border-radius: 12px;
+}
+
+.info {
+  margin: 1.5em 0;
+  text-transform: capitalize;
+}
+
+.social-links__title {
+  margin-bottom: 0.45em;
+  font-weight: 600;
 }
 
 .social-links-card img {
-    border-radius: 50%;
-    width: 90px;
+  border-radius: 50%;
+  width: 90px;
+}
+
+.info .address {
+  color: var(--green-clr);
+  font-weight: 600;
+}
+
+.bio {
+  margin-bottom: 1em;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+.links a {
+  display: block;
+}
+.links li,
+.links a {
+  border-radius: 5px;
+}
+.links li:not(:last-child) {
+  margin-bottom: 1em;
+}
+.links a {
+  background-color: var(--grey-clr);
+  text-decoration: none;
+  color: inherit;
+  padding: 0.8em 0.5em;
+  font-weight: bold;
 }
