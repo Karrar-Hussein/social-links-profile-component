@@ -113,3 +113,9 @@ body {
 .links a:active {
   background-color: hsl(75, 94%, 37%);
 }
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
