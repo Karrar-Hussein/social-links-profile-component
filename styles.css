@@ -52,6 +52,7 @@ body {
   text-align: center;
   padding: 1.25em 1em;
   border-radius: 12px;
+  margin: 1em;
 }
 
 .info {
@@ -82,20 +83,33 @@ body {
   list-style: none;
   padding: 0;
 }
+
 .links a {
   display: block;
 }
+
 .links li,
 .links a {
   border-radius: 5px;
 }
+
 .links li:not(:last-child) {
   margin-bottom: 1em;
 }
+
 .links a {
   background-color: var(--grey-clr);
   text-decoration: none;
   color: inherit;
   padding: 0.8em 0.5em;
   font-weight: bold;
+}
+
+.links a:hover {
+  background-color: var(--green-clr);
+  color: var(--grey-clr);
+}
+
+.links a:active {
+  background-color: hsl(75, 94%, 37%);
 }
